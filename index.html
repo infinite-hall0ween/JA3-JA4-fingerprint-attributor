@@ -187,8 +187,8 @@ footer code{color:var(--ember-dim)}
 
 <header>
   <p class="eyebrow">JA3 &middot; JA4 &middot; Client Hash Attribution</p>
-  <h1>What's Wearing<br><em>That Handshake?</em></h1>
-  <p class="sub">Every TLS client leaves the same mask on the wire. Paste a <b>JA3</b> or <i>JA4</i> hash to unmask the tool, framework, or malware family behind it. Runs entirely in your browser — nothing leaves this page.</p>
+  <h1>TLS<br><em> Attribution Tool</em></h1>
+  <p class="sub">Every TLS client leaves the same mask on the wire. Paste a <b>JA3</b> or <i>JA4</i> hash to unmask the tool, framework, or malware family behind it. Runs entirely in your browser. Nothing leaves this page.</p>
 </header>
 
 <div class="tabs" role="tablist">
@@ -229,7 +229,7 @@ footer code{color:var(--ember-dim)}
 </section>
 
 <footer>
-  Attribution reflects the local signature set only — an absent match means "not in this DB," not "benign." Default-configuration hashes for tools like <code>curl</code> and Go's HTTP client are extremely common and carry low specificity on their own. Corroborate C2 and malware verdicts against server-side JA3S/JA4S pairs, destination infrastructure, and timing before acting.
+  Attribution reflects the local signature set only. An absent match means "not in this DB," not "benign." Default-configuration hashes for tools like <code>curl</code> and Go's HTTP client are extremely common and carry low specificity on their own. Corroborate C2 and malware verdicts against server-side JA3S/JA4S pairs, destination infrastructure, and timing before acting.
 </footer>
 
 </div>
