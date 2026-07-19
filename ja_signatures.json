@@ -1,0 +1,56 @@
+[
+  {
+    "fingerprint": "e7d705a3286e19ea42f587b344ee6865",
+    "fp_type": "JA3",
+    "source": "Cobalt Strike (default Malleable profile)",
+    "category": "c2_framework",
+    "confidence": "medium",
+    "notes": "Commonly reported for stock CS beacons; verify against JA3S pair.",
+    "added": "2026-07-18T20:37:52.526484+00:00"
+  },
+  {
+    "fingerprint": "72a589da586844d7f0818ce684948eea",
+    "fp_type": "JA3",
+    "source": "curl (generic, OpenSSL default)",
+    "category": "legit_tool",
+    "confidence": "medium",
+    "notes": "Highly common \u2014 curl/libcurl default cipher ordering.",
+    "added": "2026-07-18T20:37:52.526577+00:00"
+  },
+  {
+    "fingerprint": "a0e9f5d64349fb13191bc781f81f42e1",
+    "fp_type": "JA3",
+    "source": "Python-requests / urllib3 default",
+    "category": "legit_tool",
+    "confidence": "medium",
+    "notes": "Common on scripted scanners and simple malware droppers alike.",
+    "added": "2026-07-18T20:37:52.526581+00:00"
+  },
+  {
+    "fingerprint": "6734f37431670b3ab4292b8f60f29984",
+    "fp_type": "JA3",
+    "source": "Go net/http default client",
+    "category": "legit_tool",
+    "confidence": "low",
+    "notes": "Very common baseline Go TLS client \u2014 low specificity.",
+    "added": "2026-07-18T20:37:52.526583+00:00"
+  },
+  {
+    "fingerprint": "b32309a26951912be7dba376398abc3b",
+    "fp_type": "JA3",
+    "source": "Trickbot (historical sample)",
+    "category": "malware",
+    "confidence": "low",
+    "notes": "Reported historically; hashes shift across TLS stack updates \u2014 treat as low-confidence indicator.",
+    "added": "2026-07-18T20:37:52.526585+00:00"
+  },
+  {
+    "fingerprint": "579ccef312d18482fc42e2b822ca2430",
+    "fp_type": "JA3",
+    "source": "Metasploit Meterpreter (reverse_https, stock)",
+    "category": "c2_framework",
+    "confidence": "medium",
+    "notes": "Stock Meterpreter TLS stager \u2014 profile changes if attacker customizes.",
+    "added": "2026-07-18T20:37:52.526586+00:00"
+  }
+]
